@@ -1,6 +1,19 @@
 {
 	"comment": "",
 	"ignore": "test",
-	"package": [],
+	"package": [
+		{
+			"checksumSHA1": "urMd7A9QPAJYY0GZJL9qBhlUmD8=",
+			"path": "github.com/gorilla/mux",
+			"revision": "757bef944d0f21880861c2dd9c871ca543023cba",
+			"revisionTime": "2016-09-20T23:08:13Z"
+		},
+		{
+			"checksumSHA1": "W1aP9mgqYrRXe6GOMASRTMITLs8=",
+			"path": "github.com/minecrafter/go-votifier",
+			"revision": "8ba96318f10877fd1f4c2373d8f0ead0339eb964",
+			"revisionTime": "2015-10-06T02:21:15Z"
+		}
+	],
 	"rootPath": "github.com/minecrafter/votifier-tester"
 }

@@ -1,9 +1,10 @@
 package main
 
 import (
-	"io"
 	"net/http"
 	"os"
+
+	"github.com/gorilla/mux"
 )
 
 func main() {
@@ -11,8 +12,10 @@ func main() {
 	if port == "" {
 		port = "8080"
 	}
-	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-		io.WriteString(w, "hello from go")
-	})
-	http.ListenAndServe(":"+port, nil)
+
+	router := mux.NewRouter()
+	router.Path("/").Methods("GET").Handler(http.FileServer(http.Dir("./assets")))
+	router.Path("/main.js").Methods("GET").Handler(http.FileServer(http.Dir("./assets")))
+	router.Path("/send").Methods("POST").HandlerFunc(SendVote)
+	http.ListenAndServe(":"+port, router)
 }
