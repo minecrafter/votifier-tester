@@ -24,7 +24,7 @@ document.getElementById("test-button").addEventListener("click", function(e) {
                 notice.className = "alert alert-danger";
                 notice.innerHTML = "Please double-check the form. Your public key may not be correct.";
             } else {
-                notice.className = "alert alert-danger;
+                notice.className = "alert alert-danger";
                 notice.innerHTML = "There is an issue with your Votifier server. Make sure your server is online and that the port is port forwarded.";
             }
         }
