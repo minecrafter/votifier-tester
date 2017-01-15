@@ -9,10 +9,10 @@
 			"revisionTime": "2016-09-20T23:08:13Z"
 		},
 		{
-			"checksumSHA1": "VuglP/oLZcMXHdVZc/LAQ1G0CXg=",
+			"checksumSHA1": "84/lDKDhAAwjR4nNVKwP6jC5OlA=",
 			"path": "github.com/minecrafter/go-votifier",
-			"revision": "30b524c44eed56dca4e4e2a9b4e0c0ef58030722",
-			"revisionTime": "2017-01-15T06:28:24Z"
+			"revision": "67f0c5fbda259a3ec6773c9222703553be36bac0",
+			"revisionTime": "2017-01-15T14:29:31Z"
 		}
 	],
 	"rootPath": "github.com/minecrafter/votifier-tester"
