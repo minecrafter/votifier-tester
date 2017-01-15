@@ -8,7 +8,7 @@
         <div class="container">
             <h1>Votifier tester</h1>
             <div id="notice"></div>
-            <form>
+            <form autocomplete="off">
                 <div class="form-group">
                     <label for="form-address">Address</label>
                     <input id="form-address" name="form-address" class="form-control" required placeholder="127.0.0.1:8192">
@@ -19,7 +19,7 @@
                 </div>
                 <div class="form-group">
                     <label for="form-public-key">Public Key</label>
-                    <textarea id="form-public-key" name="form-public-key" required class="form-control" rows="3"></textarea>
+                    <textarea id="form-public-key" name="form-public-key" required class="form-control" rows="3" placeholder="Check plugins/Votifier/rsa/public.key"></textarea>
                 </div>
                 <button id="test-button" name="test-button" class="btn btn-primary">Test</button>
             </form>
