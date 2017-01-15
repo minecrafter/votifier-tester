@@ -1,5 +1,12 @@
+"use strict";
+
 // VanillaJS lyfe
-document.getElementById("test-button").addEventListener("click", function() {
+document.getElementById("test-button").addEventListener("click", function(e) {
+    e.preventDefault();
+    var notice = document.getElementById("notice");
+    // clear the notice
+    notice.className = "";
+
     var request = {
         "Address": document.getElementById("form-address").value,
         "Username": document.getElementById("form-username").value,
@@ -11,11 +18,14 @@ document.getElementById("test-button").addEventListener("click", function() {
     xhr.onreadystatechange = function() {
         if(xhr.readyState === XMLHttpRequest.DONE) {
             if (xhr.status == 200) {
-                alert("All is good!");
+                notice.className = "alert alert-success";
+                notice.innerHTML = "Everything appears fine. If you are still encountering issues, there is likely an issue with your vote listener(s).";
             } else if (xhr.status == 400) {
-                alert("Something went wrong - please check if your public key is correct.");
+                notice.className = "alert alert-danger";
+                notice.innerHTML = "Please double-check the form. Your public key may not be correct.";
             } else {
-                alert("There is an issue with your Votifier server. Make sure your server is online and that the port is port forwarded.");
+                notice.className = "alert alert-danger;
+                notice.innerHTML = "There is an issue with your Votifier server. Make sure your server is online and that the port is port forwarded.";
             }
         }
     }
