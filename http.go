@@ -53,6 +53,7 @@ func SendVote(w http.ResponseWriter, r *http.Request) {
 		Timestamp:   time.Now().String(),
 		Username:    vr.Username,
 	}
+	log.Println("Sending vote", vote, "to", vr.Address)
 	client := votifier.NewClient(vr.Address, key)
 	if err = client.SendVote(vote); err != nil {
 		log.Println("server error", err)
