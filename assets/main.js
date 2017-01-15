@@ -6,6 +6,7 @@ document.getElementById("test-button").addEventListener("click", function(e) {
     var notice = document.getElementById("notice");
     // clear the notice
     notice.className = "";
+    notice.innerHTML = "";
 
     var request = {
         "Address": document.getElementById("form-address").value,

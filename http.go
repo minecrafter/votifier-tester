@@ -49,7 +49,7 @@ func SendVote(w http.ResponseWriter, r *http.Request) {
 	// Create the vote.
 	vote := votifier.Vote{
 		ServiceName: "test-votifier.minimum.io",
-		Address:     getClientIp(r),
+		Address:     getClientIP(r),
 		Timestamp:   time.Now().String(),
 		Username:    vr.Username,
 	}
@@ -63,7 +63,7 @@ func SendVote(w http.ResponseWriter, r *http.Request) {
 	w.WriteHeader(http.StatusOK)
 }
 
-func getClientIp(r *http.Request) string {
+func getClientIP(r *http.Request) string {
 	if os.Getenv("DYNO") == "" {
 		return strings.Split(r.RemoteAddr, ":")[0]
 	}
