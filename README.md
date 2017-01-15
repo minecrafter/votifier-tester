@@ -8,7 +8,8 @@ This project requires `govendor`.
 
 ## Deployment
 
-You can deploy this project any way you want, but I choose to deploy it atop [Heroku](https://www.heroku.com) as it is fairly low-hassle.
+You can deploy this project any way you want. As-is, you can easily deploy it with Docker or Heroku. The live instance uses Heroku for now
+(I'm likely to move it to a VPS at some point).
 
 ## Questions
 
