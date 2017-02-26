@@ -27,5 +27,8 @@
 			"revisionTime": "2017-01-15T20:58:37Z"
 		}
 	],
-	"rootPath": "github.com/minecrafter/votifier-tester"
+	"rootPath": "github.com/minecrafter/votifier-tester",
+	"heroku": {
+		"goVersion": "go1.8"
+	}
 }
