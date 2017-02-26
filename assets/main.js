@@ -1,6 +1,22 @@
 "use strict";
 
 // VanillaJS lyfe
+document.getElementById("is-v1").addEventListener("click", function() {
+    var key = document.getElementById("form-public-key");
+    var label = document.getElementById("form-public-key-label");
+    key.setAttribute("placeholder", "Check plugins/(Nu)Votifier/rsa/public.key");
+    key.value = "";
+    label.innerHTML = "Public Key";
+})
+
+document.getElementById("is-v2").addEventListener("click", function() {
+    var key = document.getElementById("form-public-key");
+    var label = document.getElementById("form-public-key-label");
+    key.setAttribute("placeholder", "Check plugins/(Nu)Votifier/config.yml under the 'tokens' section");
+    key.value = "";
+    label.innerHTML = "Token";
+})
+
 document.getElementById("test-button").addEventListener("click", function(e) {
     e.preventDefault();
     var notice = document.getElementById("notice");
@@ -11,7 +27,8 @@ document.getElementById("test-button").addEventListener("click", function(e) {
     var request = {
         "Address": document.getElementById("form-address").value,
         "Username": document.getElementById("form-username").value,
-        "PublicKey": document.getElementById("form-public-key").value
+        "Key": document.getElementById("form-public-key").value,
+        "IsV1": document.getElementById("is-v1").checked
     };
 
     var xhr = new XMLHttpRequest();

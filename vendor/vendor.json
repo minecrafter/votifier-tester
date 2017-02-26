@@ -3,16 +3,28 @@
 	"ignore": "test",
 	"package": [
 		{
-			"checksumSHA1": "urMd7A9QPAJYY0GZJL9qBhlUmD8=",
-			"path": "github.com/gorilla/mux",
-			"revision": "757bef944d0f21880861c2dd9c871ca543023cba",
-			"revisionTime": "2016-09-20T23:08:13Z"
+			"checksumSHA1": "g/V4qrXjUGG9B+e3hB+4NAYJ5Gs=",
+			"path": "github.com/gorilla/context",
+			"revision": "08b5f424b9271eedf6f9f0ce86cb9396ed337a42",
+			"revisionTime": "2016-08-17T18:46:32Z"
 		},
 		{
-			"checksumSHA1": "84/lDKDhAAwjR4nNVKwP6jC5OlA=",
+			"checksumSHA1": "Ek5SW7pswB7YzX1Dr0bTSFCNOtc=",
+			"path": "github.com/gorilla/mux",
+			"revision": "999ef73f5d50979cf6d12afed1726325b63f9570",
+			"revisionTime": "2017-02-23T20:25:54Z"
+		},
+		{
+			"checksumSHA1": "x/CrTmbbYqiC/Ry0FMpFk5dey+U=",
 			"path": "github.com/minecrafter/go-votifier",
-			"revision": "67f0c5fbda259a3ec6773c9222703553be36bac0",
-			"revisionTime": "2017-01-15T14:29:31Z"
+			"revision": "9edd12be2f47cc94ae9500bebb549bef9ec8f0f7",
+			"revisionTime": "2017-02-26T14:12:14Z"
+		},
+		{
+			"checksumSHA1": "04rQbOXJdHOtaF3i99s7vEfpeQE=",
+			"path": "github.com/minecrafter/votifier-tester",
+			"revision": "33b1c346863830892c2e04f79c04d05f62d6c76c",
+			"revisionTime": "2017-01-15T20:58:37Z"
 		}
 	],
 	"rootPath": "github.com/minecrafter/votifier-tester"

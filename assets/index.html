@@ -10,6 +10,20 @@
             <div id="notice"></div>
             <form autocomplete="off">
                 <div class="form-group">
+                    <div class="radio-inline">
+                    <label>
+                        <input type="radio" name="form-protocol" id="is-v1" checked>
+                        Votifier v1
+                    </label>
+                    </div>
+                    <div class="radio-inline">
+                    <label>
+                        <input type="radio" name="form-protocol" id="is-v2">
+                        Votifier v2
+                    </label>
+                    </div>
+                </div>
+                <div class="form-group">
                     <label for="form-address">Address</label>
                     <input id="form-address" name="form-address" class="form-control" required placeholder="127.0.0.1:8192">
                 </div>
@@ -18,8 +32,8 @@
                     <input id="form-username" name="form-username" class="form-control" required placeholder="tuxed">
                 </div>
                 <div class="form-group">
-                    <label for="form-public-key">Public Key</label>
-                    <textarea id="form-public-key" name="form-public-key" required class="form-control" rows="3" placeholder="Check plugins/Votifier/rsa/public.key"></textarea>
+                    <label for="form-public-key" id="form-public-key-label">Public Key</label>
+                    <input id="form-public-key" name="form-public-key" required class="form-control" type="text" placeholder="Check plugins/(Nu)Votifier/rsa/public.key"></input>
                 </div>
                 <button id="test-button" name="test-button" class="btn btn-primary">Test</button>
             </form>
