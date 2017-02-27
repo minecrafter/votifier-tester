@@ -24,6 +24,10 @@ func SendVote(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
+	if !strings.Contains(vr.Address, ":") {
+		vr.Address = vr.Address + ":8192"
+	}
+
 	var client votifier.Client
 	if vr.IsV1 {
 		decoded, err := base64.StdEncoding.DecodeString(vr.Key)
